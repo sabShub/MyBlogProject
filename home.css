@@ -1,52 +1,30 @@
-body {
-    margin: 0px;
-    background-color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.img-container {
-    width: 100%;
-}
-
-.title {
-    font-size: 32px;
-    color: rgb(0, 0, 0);
-    height: 10px;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.container {
-    display:flex;
-    flex-direction: row;
+.page-header {
+    background: no-repeat left/cover url(headerBG1.jpg);
+    display: flex;
+    height: 120px;
+    min-width: 120px;
     align-items: center;
-    justify-content: space-evenly;
-    border: 2px solid rebeccapurple;
-    margin-top: 40px;
+    color: #fff;
+    text-shadow: #000 0 0 .2em;
 }
 
-.box {
-    width: 40%;
-    height: 250px;
-    border: 1px solid violet;
+.main-title {
+    font-size: 50px;
+    font: bold;
+    font-style: italic;
+    margin: 2%;
 }
-.img-box {
-    border: 1px solid violet;
-}
-.myself {
-    width:60%;
-    height:300px;
-    padding-left: 20px;
-    
-}
-.about-me {
-    padding-top: 10px;
-}
-.box-description {
-    border: 1px solid green;
-}
+  
+.container {
+    display: grid;
+    width: 100%;
+    height: 100px;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: ;
+    border: 3px solid red;
+
+} 
 
 
-   
    
  
