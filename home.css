@@ -1,0 +1,52 @@
+body {
+    margin: 0px;
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img-container {
+    width: 100%;
+}
+
+.title {
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    height: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid rebeccapurple;
+    margin-top: 40px;
+}
+
+.box {
+    width: 40%;
+    height: 250px;
+    border: 1px solid violet;
+}
+.img-box {
+    border: 1px solid violet;
+}
+.myself {
+    width:60%;
+    height:300px;
+    padding-left: 20px;
+    
+}
+.about-me {
+    padding-top: 10px;
+}
+.box-description {
+    border: 1px solid green;
+}
+
+
+   
+   
+ 
