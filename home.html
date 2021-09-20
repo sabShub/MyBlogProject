@@ -10,33 +10,71 @@
         <meta name="robots" content="noindex,nofollow">
 </head>
 <body>
-    <header>
-        <div class="header">
-        My Blog Project
-        </div>
-        <div>
-            <img class="fb" src="facebook.png" alt="Facebook">
-        </div>    
-        <div>
-            <img class="twitter" src="twitter.png" alt="Twitter">
-        </div>
-    </header>
-    <nav> 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
+    <div class="container">
+    <!--header elements-->
+    <div class="header">  
+        <div class="title">
+            <h1>My Blog Project</h1>
+            </div>
+        <div class="main-menu">
+            <nav>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+            </div>
+    </div>   
+<!--sidebar elements-->
+    <div class="sidebar">
+        <!--search form-->
+<ul>
+    <li> 
+        <form>
+        <input id="search" type="text" placeholder="Search..." required>
+        <img class="search-btn" src="big-search-lens.png" alt="Search Button" href="#">
+      </form>
+    </li>
+    <!--archives section-->
+    <li>
+        <h3 href="#">ARCHIVES</h3>
+        <ul class="archive">
+        <li href="#">January 2021</li>
+        <li href="#">February 2021</li>
+        <li href="#">March 2021</li>
+        <li href="#">April 2021</li>
+        <li href="#">May 2021</li>
+        <li href="#">June 2021</li>
+        <li href="#">July 2021</li>
+        <li href="#">August 2021</li>
+        <li href="#">September 2021</li>
+        <li href="#">...</li>
         </ul>
-    </nav>
-       
-            <h1>Titolo</h1>
-            <h2>Titolo</h2>
-            <h3>Titolo</h3>
-            <h4>TItolo</h4>
-            <h5>Titolo</h5>
-            <h6>titolo</h6>
-    
-        <section class="articles">
+    </li>
+    <!--social section-->
+    <li>
+        <h3>Follow me!</h3> 
+        <br>
+        <a href="https://www.facebook.com/" target="blank"><img class="fb" src="facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com/?lang=en" target="blank"> <img class="twitter" src="twitter.png" alt="Twitter"> </a>
+        <a href="https://www.linkedin.com/feed/" target="blank"> <img class="linkedin" src="linkedin.png" alt="Linkedn"> </a>
+        </li>
+       <!--subscription form-->
+<li> 
+    <h3>Subscribe to receive my newsletter!</h3>
+        <form class="subscription">
+            <input class="subscribe" type="text" placeholder="Name and Surname" required>
+            <br>
+    <input class="subscribe" type="text" placeholder="Insert you e-mail address here" required>
+    <br>
+    <input class="submit" type="submit" value="Submit">
+</form>
+  </li>
+   </ul> 
+<!--articles section-->
+</div>
+        <div class="content">
             <article>
                     <h2>First Article</h2>
                     <p class="article-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic a quia quo voluptates voluptatem illo voluptas sed. Aliquam corporis, sint quia nam consequuntur ullam id repudiandae possimus repellat neque eligendi.</p>            
@@ -52,15 +90,21 @@
                     <h2>Third Article</h2>
                     <p class="article-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic a quia quo voluptates voluptatem illo voluptas sed. Aliquam corporis, sint quia nam consequuntur ullam id repudiandae possimus repellat neque eligendi.</p>
             </article>
-        </section>
-        <aside>
-            <div class="widget">Area 1</div>
-            <div class="widget">Area 2</div>
-            <div class="widget">Area 3</div>
-        </aside>
-        <footer class="footer">
-            <small>Footer</small>
-        </footer>
+
+            <article>
+                <h2>Fourth Article</h2>
+                <p class="article-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic a quia quo voluptates voluptatem illo voluptas sed. Aliquam corporis, sint quia nam consequuntur ullam id repudiandae possimus repellat neque eligendi.</p>
+        </article>
+
+        <article>
+            <h2>Fifth Article</h2>
+            <p class="article-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic a quia quo voluptates voluptatem illo voluptas sed. Aliquam corporis, sint quia nam consequuntur ullam id repudiandae possimus repellat neque eligendi.</p>
+    </article>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            Footer
+        </div>
     </div>
 </body>
     
