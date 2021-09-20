@@ -7,7 +7,6 @@ body {
 /*styling css grid*/
 .container {
     display:grid;
-    border: 2px solid red;
     grid-gap: 5px;
     grid-template-columns: auto 300px;
     grid-template-rows: 200px auto 100px;
@@ -21,8 +20,18 @@ body {
     background-size: cover;
 }
 .sidebar {
+    display:flex;
+    text-align: center;
     border-left: 1px solid rgb(193, 212, 206);
     grid-area: sd;
+}
+.sb-list {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+.archive {
+    padding-inline-start: 0px;
+    list-style-type: none;
 }
 .content {
     grid-area: main;
@@ -60,7 +69,7 @@ nav li a:hover {
 nav li { 
     display: inline-block;
     padding-right: 30px;
-} 
+}
 
 
 
