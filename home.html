@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="Description" CONTENT="Submitting a Web Developer Course project!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="home.css">
         <title>
              MyBlogProject 
@@ -30,59 +31,49 @@
         <!--sidebar elements-->
         <div class="sidebar">
             <!--search form-->
-            <ul class="sb-list">
-                <div class="search">
-                    <li> 
-                        <form>
-                            <input type="text" placeholder="Search..." required>
-                            <img class="search-btn" src="big-search-lens.png" alt="Search Button" href="#">
-                        </form>
-                    </li>
-                </div>   
-                    <!--archives section-->
-                    <div class="archive">
-                        <li>
-                        <h3 href="#">ARCHIVES</h3>
-                            <ul>
-                                <li><a href="#">January 2021</a></li>                            
-                                <li><a href="#">February 2021</a></li>                            
-                                <li><a href="#">March 2021</a></li>                           
-                                <li><a href="#">April 2021</a></li>                            
-                                <li><a href="#">May 2021</a></li> 
-                                <li><a href="#">June 2021</a></li>
-                                <li><a href="#">July 2021</a></li>
-                                <li><a href="#">August 2021</a></li>
-                                <li><a href="#">September 2021</a></li>
-                                <li><a href="#">October 2021</a></li>
-                                <li><a href="#">November 2021</a></li>
-                                <li><a href="#">December 2021</a></li>
-                                <li><a href="#">2020</a></li>
-                            </ul>
-                        </li>
-                    </div>
-                <!--social section-->
-                <div class="social">
-                    <li>
-                        <h3>Follow me!</h3><br>
-                        <a href="https://www.facebook.com/" target="blank"><img class="fb" src="facebook.png" alt="Facebook"></a>
-                        <a href="https://twitter.com/?lang=en" target="blank"> <img class="twitter" src="twitter.png" alt="Twitter"> </a>
-                        <a href="https://www.linkedin.com/feed/" target="blank"> <img class="linkedin" src="linkedin.png" alt="Linkedn"> </a>
-                    </li>
-                </div>    
-                <!--subscription form-->
-                <div class="subscription">
-                    <li> 
-                        <h3>Subscribe!</h3>
-                        <form>
-                            <input class="subscribe" type="text" placeholder="Name and Surname" required>
-                            <br>
-                            <input class="subscribe" type="text" placeholder="E-mail address" required>
-                            <br>
-                            <input class="submit" type="submit" value="Submit">
-                        </form>
-                    </li>
-                </div>
-            </ul> 
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Search..." required>
+                    <img class="search-btn" src="big-search-lens.png" alt="Search Button" href="#">
+                </form>
+            </div>   
+            <!--archives section-->
+            <div class="archive">
+                <h3 href="#">ARCHIVES</h3>
+                    <ul>
+                        <li><a href="#">January 2021</a></li>                            
+                        <li><a href="#">February 2021</a></li>                            
+                        <li><a href="#">March 2021</a></li>                           
+                        <li><a href="#">April 2021</a></li>                            
+                        <li><a href="#">May 2021</a></li> 
+                        <li><a href="#">June 2021</a></li>
+                        <li><a href="#">July 2021</a></li>
+                        <li><a href="#">August 2021</a></li>
+                        <li><a href="#">September 2021</a></li>
+                        <li><a href="#">October 2021</a></li>
+                        <li><a href="#">November 2021</a></li>
+                        <li><a href="#">December 2021</a></li>
+                        <li><a href="#">2020</a></li>
+                    </ul>
+            </div>
+            <!--social section-->
+            <div class="social">
+                <h3>Follow me!</h3><br>
+                <a href="https://www.facebook.com/" target="blank"><img class="fb" src="facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/?lang=en" target="blank"> <img class="twitter" src="twitter.png" alt="Twitter"> </a>
+                <a href="https://www.linkedin.com/feed/" target="blank"> <img class="linkedin" src="linkedin.png" alt="Linkedn"> </a>
+            </div>    
+            <!--subscription form-->
+            <div class="subscription">
+                <h3>Subscribe!</h3>
+                <form>
+                    <input class="subscribe" type="text" placeholder="Name and Surname" required>
+                    <br>
+                    <input class="subscribe" type="text" placeholder="E-mail address" required>
+                    <br>
+                    <input class="submit" type="submit" value="Submit">
+                </form>
+            </div>
         </div>
         <!--home page content-->
         <div class="content">
@@ -109,59 +100,57 @@
                     <a href="#">Read more</a>
                 </div> 
             </div> 
-            <!--previous article section-->    
+            <!--previous article section, all the postcards pics are linked to the same article page as they're just an example-->    
             <div class="postcards">
                 <div class="card"> 
-                    <img class="card-image" src="postcard1.jpg" alt="Working at my blog">
+                    <a href="blog-post.html" target="blank"><img class="card-image" src="postcard1.jpg" alt="Working at my blog"></a>
                     <div class="card-text" > 
                         <h2>First Article</h2>
-                        <p class="article-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic a quia quo voluptates voluptatem illo voluptas sed. Aliquam corporis, sint quia nam consequuntur ullam id repudiandae possimus repellat neque eligendi.</p>            
-                        <button>Read more</button>
+                        <p class="article-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic a quia quo voluptates voluptatem illo voluptas sed. Aliquam corporis, sint quia nam consequuntur ullam id repudiandae possimus repellat neque eligendi...</p>            
                     </div>          
                 </div>
                 <div class="card"> 
-                    <img class="card-image" src="postcard1.jpg" alt="Working at my blog">
+                    <a href="blog-post.html" target="blank"><img class="card-image" src="postcard2.jpg" alt="Working at my blog"></a>
                     <div class="card-text" > 
                         <h2>Second Article</h2>
-                        <p class="article-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic a quia quo voluptates voluptatem illo voluptas sed. Aliquam corporis, sint quia nam consequuntur ullam id repudiandae possimus repellat neque eligendi.</p>            
-                        <button>Read more</button>
+                        <p class="article-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic a quia quo voluptates voluptatem illo voluptas sed. Aliquam corporis, sint quia nam consequuntur ullam id repudiandae possimus repellat neque eligendi...</p>            
                     </div>  
                 </div>
                 <div class="card"> 
-                    <img class="card-image" src="postcard1.jpg" alt="Working at my blog">
+                    <a href="blog-post.html" target="blank"><img class="card-image" src="postcard3.jpg" alt="Working at my blog"></a>
                     <div class="card-text" > 
                         <h2>Third Article</h2>
-                        <p class="article-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic a quia quo voluptates voluptatem illo voluptas sed. Aliquam corporis, sint quia nam consequuntur ullam id repudiandae possimus repellat neque eligendi.</p>            
-                        <button>Read more</button>
+                        <p class="article-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic a quia quo voluptates voluptatem illo voluptas sed. Aliquam corporis, sint quia nam consequuntur ullam id repudiandae possimus repellat neque eligendi...</p>            
                     </div>  
                 </div>
             </div>     
         </div>
-    </div>
-        <!--footer-->
-    <div class="footer">
-        <div class="box1">
-                <a href="home.html"><h3>My Blog Project</h3></a>
-        </div>
-            <div class="footer-menu">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </div>
-            <div class="social">
-                <a href="https://www.facebook.com/" target="blank"><img class="fb" src="facebook.png" alt="Facebook"></a>
-                <a href="https://twitter.com/?lang=en" target="blank"> <img class="twitter" src="twitter.png" alt="Twitter"> </a>
-                <a href="https://www.linkedin.com/feed/" target="blank"> <img class="linkedin" src="linkedin.png" alt="Linkedn"> </a>
-            </div>
-        </div>
-    <div class="small-footer">
-            <p><small>© ME2021. All Rights Reserved - <a href="#" target="_blank">Privacy Policy</a></small></p>
-     </div>    
 
+               <!--footer-->
+        <div class="footer">
+            <div class="box1">
+                    <a href="home.html"><h3>My Blog Project</h3></a>
+            </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="blog-post.html">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="social-f">
+                    <a href="https://www.facebook.com/" target="blank"><img class="fb" src="facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/?lang=en" target="blank"> <img class="twitter" src="twitter.png" alt="Twitter"> </a>
+                    <a href="https://www.linkedin.com/feed/" target="blank"> <img class="linkedin" src="linkedin.png" alt="Linkedn"> </a>
+                </div>
         </div>
+
+        <div class="small-footer">
+                <p><small>© ME2021. All Rights Reserved - <a href="#" target="blank">Privacy Policy</a></small></p>
+        </div> 
     </div>
+    
+
 </body>
     
 </html>
