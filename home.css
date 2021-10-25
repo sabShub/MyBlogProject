@@ -20,6 +20,7 @@ body {
       "ft ft ft ft ft ft ft ft"
       "sf sf sf sf sf sf sf sf";
 }
+
 /*header style*/
 .header {
     grid-area: hd;
@@ -313,15 +314,16 @@ nav li {
     color:rgb(204, 0, 82)
 }
 /*MEDIA QUERIES*/
-@media(max-width: 320px) {
+@media(max-width: 600px) {
     body {
         margin: 0 5px;
     }
+
     .container {
-        display:grid;
+        display: grid;
         max-width: 100%;
         grid-template-columns: 700px;
-        grid-template-rows: 50px 160px auto auto 20px;
+        grid-template-rows: 80px 160px auto auto 20px;
         grid-template-areas: 
           "hd"
           "sd"
@@ -330,10 +332,9 @@ nav li {
           "sf";
     }
 
-    nav {
-        display: none;
+    .search form{
+        margin-top: 0;
     }
-
     .archive ul {
         display: none;
     }
@@ -347,9 +348,16 @@ nav li {
 
     .search {
         margin-left: 15px;
+        margin-top: 65px;
+    }
+
+    .archive h3 {
+        padding-top: 50px;
+        margin-bottom: 45px;
     }
     .social {
         padding-right: 0;
+        margin-top: 10px;
     }
     .subscription {
         padding-right: 0;
@@ -365,7 +373,8 @@ nav li {
 
     .hp-pic img {
         max-width: 690px;
-    }
+    } 
+
     .lorem p {
         max-width: 690px;
     }
@@ -398,7 +407,3 @@ nav li {
     }
 }
 
-@media(min-width: 901px) {
-    
-}
-  /*@media(min-width: 600px) and (max-width: 900px) {}*/   

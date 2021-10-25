@@ -20,6 +20,7 @@ body {
       "ft ft ft ft ft ft ft ft"
       "sf sf sf sf sf sf sf sf";
 }
+
 /*header style*/
 .header {
     grid-area: hd;
@@ -67,12 +68,6 @@ nav li {
     grid-area: sd;
     margin:15px 0 0 10px;
     padding: 0;  
-}
-
-.sb-list {
-    list-style-type: none;
-    padding-inline-start: 0px;
-    margin-top: 60px;
 }
 
 .archive h3 {
@@ -141,35 +136,14 @@ nav li {
 }
 
 .content h1 {
-    padding: 45px 0 0 0;
+    padding-top: 45px;
 }
 
 .content p {
     margin-bottom: 5px;
-    margin-right: 180px;
+    width: 1000px;
 }
-/*read more button styling*/
-.read-more {
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-}    
-.read-more a{
-    border-bottom: 1px solid rgb(51, 51, 51);
-    margin: 0 190px 0 0 !important;
-    color:rgb(51, 51, 51);
-    background-color: transparent;
-    text-align: center;
-    cursor: pointer; 
-    box-shadow: none;  
-    text-decoration: none;
-    font-family: 'Neue Montreal', sans-serif;  
-    font-size: 12px; 
-}
-.read-more a:hover{
-    transition-duration: 0.4s;
-    font-size: 14px;
-}
+
 /*recent article*/
 .hp-pic{
     margin: 0 15px 0 0;
@@ -178,89 +152,64 @@ nav li {
     max-height: 666px;
     max-width: 1000px;
 }
-/*about me section*/
-.aboutme-hp {
-    display: flex;
-    border: 1px solid rgb(42,60,54);
-    margin: 80px 110px 0 0;
-    width: 1000px;
-    background-color:rgb(225, 234, 232);
-    box-shadow: 5px 5px 5px;
+
+/*blog post page*/
+.blog-post q{
+    font-size: 20px;
+    font-style: italic;   
+    font-weight:bold;
+    quotes:'«' '»';
+    color:rgb(94,135,121); 
 }
 
-.description {
-    padding: 15px;
-}
-
-.description h2 { 
-    margin-top: 50px;
-}
-
-.description p {
-    text-align: justify;
-    margin: 5px 10px 5px 0 !important;
-}
-
-.description a {
-    border-bottom: 1px solid rgb(51, 51, 51);
-    margin: 5px 0 0 380px;
+.second-p a{
+    text-decoration: none;
     color:rgb(51, 51, 51);
-    background-color: transparent;
-    text-align: center;
-    cursor: pointer; 
-    box-shadow: none; 
-    text-decoration: none; 
-    font-family: 'Neue Montreal', sans-serif;  
-    font-size: 12px;
+    font-weight: bold;
 }
-.description a:hover{
-    transition-duration: 0.4s;
-    font-size: 14px;
+
+.second-p a:hover{
+    color:rgb(204, 0, 82);
 }
-/*old articles section*/
-.postcards {
-    grid-area: pc;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+
+.pics-2 {
     width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.card {
-    width: 30%;
-    height: auto;
-    margin: 1.5%;
-    background-color:white;  
+
+.pic-1 {
+    margin-right: 15px;
+
+} 
+
+.pic-2 {
+    margin-left: 15px;
 }
-.card-image {
-    width: 100%;
-    height: auto;
+
+.social-img {
+    margin: 5px 0 10px 0;
 }
-.card-text h2{
-    margin: 0px;
+
+/*author info*/
+.author {
+    border-top:1px dotted rgb(105, 150, 134);
+    border-bottom: 1px dotted rgb(105, 150, 134);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px 180px 80px 0; 
 }
-.card-text {
-    padding: 15px 15px 0 15px;
-    margin-bottom: 0;
+
+.author-pic {
+    padding: 10px 0 10px 10px;
 }
-.article-content {
-    margin-right: 0;
+
+.author-info ul {
+    list-style-type:circle;
+    padding: 8px 30px 0 30px;   
 }
-.card-text button {
-    border: 1px solid rgb(51, 51, 51);
-    border-radius: 8px;
-    margin: 5px 0 10px 200px;
-    color:rgb(51, 51, 51);
-    background-color: transparent;
-    text-align: center;
-    cursor: pointer; 
-    box-shadow: none;  
-    font-family: 'Neue Montreal', sans-serif;  
-    font-size: 11px; 
-}
-.card-text button:hover{
-    transition-duration: 0.4s;
-    font-size: 12px;
-}
+
 /*footer*/
 .footer {
     grid-area: ft;
@@ -313,41 +262,89 @@ nav li {
     grid-area: sf;
 }
 
-/*blog post page*/
-.blog-post q{
-    font-size: 20px;
-    font-style: italic;   
-    font-weight:bold;
-    quotes:'«' '»';
-    color:rgb(94,135,121); 
-}
-.second-p a{
-    text-decoration: none;
-    color:rgb(51, 51, 51);
-    font-weight: bold;
-}
-.second-p a:hover{
-    color:rgb(204, 0, 82);
-}
-.pics-2 {
-    width: 1000px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.pic-1 {
-    margin: 10px 0 10px 0;
 
-} 
-.pic-2 {
-    margin: 10px 0 10px 0;
-}
+@media(max-width: 600px) {
+    body {
+        margin: 0 5px;
+    }
 
-.social-img {
-    margin: 5px 0 10px 0;
-}
+    .container {
+        display:grid;
+        max-width: 100%;
+        grid-template-columns: 700px;
+        grid-template-rows: 80px 160px auto auto 20px;
+        grid-template-areas: 
+          "hd"
+          "sd"
+          "main"
+          "ft"
+          "sf";
+    }
 
-.lorem {
-    margin-right: 180px;
+    .archive ul {
+        display: none;
+    }
+
+    .sidebar {
+        display:flex;
+        justify-content: space-around;
+        margin: 10px 0;
+        background-color: rgb(180, 203, 198);
+    }
+
+    .search {
+        margin-left: 15px;
+        margin-top: 65px;
+    }
+
+    .archive h3 {
+        padding-top: 50px;
+        margin-bottom: 45px;
+    }
+    .social {
+        padding-right: 0;
+        margin-top: 10px;
+    }
+    .subscription {
+        padding-right: 0;
+        max-width: 150px;
+    }
+    .social h3 {
+        display: none;
+    }
+
+    .hp-pic{
+        max-width: 690px;
+    }
+
+    .hp-pic img {
+        max-width: 690px;
+    }
+
+    .blog-post p {
+        max-width: 690px;
+    }
+
+    .second-img {
+        max-width: 690px;
+    }
+
+    .pics-2 {
+        max-width: 690px;
+    }
+
+    .pic-1 {
+        width: 100%    
+    } 
+    
+    .pic-2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .social-img {
+        max-width: 690px;
+    }
 }
 
 
