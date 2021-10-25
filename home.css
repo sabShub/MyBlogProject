@@ -313,7 +313,7 @@ nav li {
 .small-footer a:hover {
     color:rgb(204, 0, 82)
 }
-/*MEDIA QUERIES*/
+/*mobile*/
 @media(max-width: 600px) {
     body {
         margin: 0 5px;
@@ -393,6 +393,105 @@ nav li {
 
     .footer {
         max-width:700px;
+        display: block; 
+    }
+
+    .box1 {
+        text-align: center;
+    }
+    .footer-menu {
+        text-align: center;
+    }
+    .social-f {
+        text-align: center;
+    }
+}
+
+/*tablet*/
+@media(min-width:601px) and (max-width:900px) {
+    body {
+        margin: 0 5px;
+        text-align: center;
+    }
+
+    .container {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: 860px;
+        grid-template-rows: 80px 160px auto auto 20px;
+        grid-template-areas: 
+          "hd"
+          "sd"
+          "main"
+          "ft"
+          "sf";
+    }
+
+    .search form{
+        margin-top: 0;
+    }
+    .archive ul {
+        display: none;
+    }
+
+    .sidebar {
+        display:flex;
+        justify-content: space-around;
+        margin: 10px 0;
+        background-color: rgb(180, 203, 198);
+    }
+
+    .search {
+        margin-left: 15px;
+        margin-top: 65px;
+    }
+
+    .archive h3 {
+        padding-top: 50px;
+        margin-bottom: 45px;
+    }
+    .social {
+        padding-right: 0;
+        margin-top: 10px;
+    }
+    .subscription {
+        padding-right: 0;
+        max-width: 150px;
+    }
+    .social h3 {
+        display: none;
+    }
+
+    .hp-pic{
+        max-width: 860px;
+    }
+
+    .hp-pic img {
+        max-width: 860px;
+    } 
+
+    .lorem p {
+        max-width: 860px;
+    }
+    .aboutme-hp {
+        max-width: 860px;
+    }
+    .aboutme-pic {
+        display: none;
+    }
+    .postcards {
+        width: 860px;
+    }
+    .card {
+        width: 100%;
+    }   
+    
+    .card-text {
+        text-align: left;
+    }
+
+    .footer {
+        max-width:860px;
         display: block; 
     }
 
