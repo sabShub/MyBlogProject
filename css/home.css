@@ -1,3 +1,7 @@
+@import "header-style.css";
+@import "section-style.css";
+@import "footer-style.css";
+
 body { 
     background-image: url(bodyBackG.jpg);
     background-size: cover;
@@ -21,119 +25,6 @@ body {
       "sf sf sf sf sf sf sf sf";
 }
 
-/*header style*/
-header {
-    grid-area: hd;
-    background-color:rgb(225, 234, 232);
-}
-
-.logo {
-    align-items: center;
-    padding: 0px;
-    margin: 5px;
-    text-align: center;
-}
-
-.logo a {
-    text-decoration: none;
-    color: rgb(94, 135, 122);
-    font-family:'Neue Montreal', sans-serif;   
-    font-size: 30px;
-    text-shadow: 3px 3px 3px rgb(180, 203, 194);    
-}
-
-nav ul { 
-    list-style-type: none;
-    margin-right: 20px;
-    text-align: center;
-}
-
-nav li a { 
-    text-decoration: none;
-    font-size: 16px;
-    color: rgb(94, 135, 122);
-    text-shadow: 0px 0px 1px rgb(180, 203, 194);
-}
-
-nav li a:hover { 
-color: rgb(204, 0, 82);
-}
-
-nav li { 
-    display: inline-block;
-    padding-right: 30px;
-}
-/*sidebar style*/
-section {
-    grid-area: sd;
-    margin:15px 0 0 10px;
-    padding: 0;  
-}
-
-.search form {
-    margin-top: 60px;
-}
-
-.archive h3 {
-    padding-top: 45px;
-    font-size: 14px;
-}
-.archive ul {
-    padding-left: 0px;
-    list-style-type: none;
-}
-.archive ul a {
-    text-decoration: none;
-    color: rgb(51, 51, 51);
-}
-.archive ul a:hover {
-    color:rgb(204, 0, 82);
-}
-.social h3{
-    margin: 0;
-}
-
-.submit {
-    border: 1px solid rgb(51, 51, 51);
-    border-radius: 8px;
-    margin: 0 130px 0 0;
-    color:rgb(51, 51, 51);
-    background-color: transparent;
-    text-align: center;
-    cursor: pointer; 
-    box-shadow: none;  
-    font-family: 'Neue Montreal', sans-serif;  
-    font-size: 12px; 
-    margin-top: 5px;
-}
-.subscription {
-    padding: 30px 30px 0 0;
-}
-.subscription h3{
-    margin: 0;
-}
-.subscribe {
-    border: 1px solid rgb(51, 51, 51);
-    color:rgb(51, 51, 51);
-    background-color: transparent;
-    text-align: left;
-    cursor: pointer; 
-    box-shadow: none;  
-    font-family: 'Neue Montreal', sans-serif;  
-    font-size: 12px; 
-    margin-top: 5px;
-}
-.submit:hover{
-    transition-duration: 0.4s;
-    font-size: 14px;
-}
-
-.search input {
-    background-color: transparent;
-}
-.search-btn {
-    cursor: pointer;
-}
 /*Content style*/
 .content {
     grid-area: main;
@@ -253,66 +144,6 @@ section {
     margin-right: 0;
 }
 
-/*footer*/
-footer {
-    grid-area: ft;
-    background-color: rgb(210,224,221);
-    display:flex;
-    justify-content: space-evenly;
-    padding:15px;
-    padding-left: 30px;
-    border: 1px solid rgb(42,60,54);
-    border-radius: 20px;
-}
-
-.box1 a {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;   
-    text-decoration: none;
-    color:rgb(42, 60, 54);
-    font-style: italic;
-    font-size: 18px;
-}
-.box1 a:hover{
-    font-size: 20px;
-}
-
-.footer-menu ul {
-    list-style-type:none;
-    padding-left: 0px;
-}
-.footer-menu li {
-    padding-bottom: 10px
-}
-.footer-menu li a {
-    text-decoration: none;
-    color: rgb(42, 60, 54);
-    font-size: 18px;
-}
-.footer-menu li a:hover {
-    font-size: 20px;
-}
-.social {
-    padding-right: 30px;
-    padding-top: 30px;
-}
-/*small footer*/
-.small-footer {
-    grid-area: sf;
-}
-
-.small-footer p {
-    background-color: rgb(180, 203, 198);
-    margin: 0;
-    padding-left: 5px;
-}
-
-.small-footer a {
-    color: rgb(51, 51, 51);
-}
-
-.small-footer a:hover {
-    color:rgb(204, 0, 82)
-}
 /*mobile*/
 @media(max-width: 600px) {
     body {

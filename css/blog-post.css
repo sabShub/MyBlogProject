@@ -175,6 +175,10 @@ article p {
     color:rgb(204, 0, 82);
 }
 
+figure {
+    margin-inline-start: 0px !important;
+}
+
 .pics-2 {
     width: 1000px;
     display: flex;
