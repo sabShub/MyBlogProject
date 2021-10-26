@@ -14,7 +14,7 @@
     <!--starting html for css grid layout-->
     <div class="container">
         <!--header elements-->
-        <div class="header">  
+        <header>  
             <div class="logo">
                 <a href="home.html">My Blog Project</a>
             </div>
@@ -27,9 +27,9 @@
                     </ul>
                 </nav>
             </div>
-        </div>   
+        </header>   
         <!--sidebar elements-->
-        <div class="sidebar">
+        <section>
             <!--search form-->
             <div class="search">
                 <form>
@@ -69,10 +69,10 @@
                         <input class="submit" type="submit" value="Submit">
                     </form>
             </div>
-        </div>
+        </section>
         <!--home page content-->
         <div class="content">
-            <div class="blog-post">
+            <article>
               <h1>How to build a successful blog from scratch...</h1>
               <h2>...Avoiding stress and waste of money</h2>
                 <div class="hp-pic">
@@ -83,12 +83,13 @@
                  </p><br>
                     
                 <h3>Sed gravida metus lectus, et condimentum turpis commodo vitae.</h3>
-
+                
+                <!--adding figure tag moves the pic to the center, having trouble fixing it-->
                 <figure>
                 <img src="assets/blog-post-pics/post-pic.jpg" alt="Me, working on my laptop" class="second-img">
                 <figcaption>Me, working at my laptop</figcaption>
                 </figure>
-                
+
                 <p class="second-p">Donec dictum enim ac enim semper pharetra. In in mi a lorem blandit fringilla nec eu magna. Nulla molestie metus sed convallis faucibus. Quisque nec massa vehicula, faucibus augue in, molestie quam. Morbi varius risus eget felis rhoncus pretium. In aliquet elementum ex, vitae vulputate nunc vestibulum sed. Donec congue auctor leo ac tristique. Aliquam egestas nibh laoreet volutpat porttitor. Morbi mattis auctor urna sit amet aliquam.
                    Duis nec lectus nec dolor vehicula <a href="https://www.pexels.com/photo/photo-of-yellow-arrow-road-signage-977603/" alt="arrows" target="blank">sagittis</a> id id risus. In eu varius sem. Nam dapibus sapien at ornare rutrum. Praesent nec vehicula metus, nec porttitor tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec nec finibus dui. Quisque porttitor nisl ac augue tristique consequat. Aliquam aliquam felis ut urna condimentum fermentum. Phasellus vulputate viverra est. Etiam in pellentesque nibh, faucibus consectetur odio. Donec ac venenatis ex. Ut in sem massa. Suspendisse et euismod dolor. Donec vitae mauris efficitur justo imperdiet posuere.
                    Cras id pellentesque nibh. Cras porta efficitur consequat. Mauris aliquet faucibus mi non facilisis. Aenean ut fermentum risus. Vivamus ut ultricies mauris. Duis a accumsan lacus. Donec dui risus, accumsan sed leo ac, euismod porttitor ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum nunc sapien, eu lobortis lacus ultricies ac.
@@ -117,7 +118,7 @@
                    Morbi vitae nisl quis lorem ornare maximus sit amet in justo. Aliquam erat volutpat. Vestibulum iaculis ligula dapibus fringilla fringilla. Curabitur non nunc volutpat, lacinia purus sit amet, vulputate tellus. Sed rhoncus quam ut placerat volutpat. Etiam pretium dolor lacus, eget sagittis tellus aliquet sed. Cras quis commodo sem, ut rutrum tortor. Praesent ultricies diam velit, sed consectetur mi imperdiet vel. Pellentesque eu dui condimentum, facilisis erat nec, accumsan velit. Nullam facilisis, ligula a iaculis pellentesque, mauris justo mattis nulla, id dictum magna purus a elit. Ut a tempus nibh, at commodo nibh. Nunc in massa nec risus semper tincidunt.
                    Integer accumsan est est. <strong>Fusce non est non leo posuere elementum.</strong> Ut in leo augue. Maecenas facilisis ex sed arcu molestie, eget lacinia tortor pretium. Vivamus ultrices neque nulla, nec molestie tortor cursus ut. Nulla mollis porta erat a vestibulum. Nam ac commodo nisl.
                    </p>
-            </div>
+                </article>
             <!--author info-->
             <div class="author">
                 <div class="author-pic">
@@ -134,7 +135,7 @@
             </div>
         </div>
         <!--footer-->
-        <div class="footer">
+        <footer>
             <div class="box1">
                 <a href="home.html"><h3>My Blog Project</h3></a>
             </div>
@@ -150,7 +151,7 @@
                 <a href="https://twitter.com/?lang=en" target="blank"> <img class="twitter" src="assets/social-icons/twitter.png" alt="Twitter"> </a>
                 <a href="https://www.linkedin.com/feed/" target="blank"> <img class="linkedin" src="assets/social-icons/linkedin.png" alt="Linkedn"> </a>
             </div>
-        </div>
+        </footer>
         <div class="small-footer">
             <p><small>© ME2021. All Rights Reserved - <a href="#" target="_blank">Privacy Policy</a></small></p>
         </div>    

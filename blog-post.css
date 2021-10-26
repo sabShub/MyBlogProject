@@ -22,7 +22,7 @@ body {
 }
 
 /*header style*/
-.header {
+header {
     grid-area: hd;
     background-color:rgb(225, 234, 232);
 }
@@ -64,7 +64,7 @@ nav li {
     padding-right: 30px;
 }
 /*sidebar style*/
-.sidebar {
+section {
     grid-area: sd;
     margin:15px 0 0 10px;
     padding: 0;  
@@ -154,14 +154,14 @@ nav li {
 }
 
 /*blog post page*/
-.blog-post q{
+article q{
     font-size: 20px;
     font-style: italic;   
     font-weight:bold;
     quotes:'«' '»';
     color:rgb(94,135,121); 
 }
-.blog-post p {
+article p {
     margin-right: 0;
 }
 
@@ -213,7 +213,7 @@ nav li {
 }
 
 /*footer*/
-.footer {
+footer {
     grid-area: ft;
     background-color: rgb(210,224,221);
     display:flex;
@@ -283,7 +283,7 @@ nav li {
         display: none;
     }
 
-    .sidebar {
+    section {
         display:flex;
         justify-content: space-around;
         margin: 10px 0;
@@ -319,7 +319,7 @@ nav li {
         max-width: 700px;
     }
 
-    .blog-post p {
+    article p {
         max-width: 700px;
     }
 
@@ -345,7 +345,7 @@ nav li {
         max-width: 700px;
     }
 
-    .footer {
+    footer {
         max-width:700px;
         display: block; 
     }
@@ -384,7 +384,7 @@ nav li {
         display: none;
     }
 
-    .sidebar {
+    section {
         display:flex;
         justify-content: space-around;
         margin: 10px 0;
@@ -420,7 +420,7 @@ nav li {
         max-width: 800px;
     }
 
-    .blog-post p {
+    article p {
         max-width: 800px;
         margin-right: 0;
     }
@@ -456,7 +456,7 @@ nav li {
         margin-right: 0;
     }
 
-    .footer {
+    footer {
         max-width:800px;
         display: block; 
     }

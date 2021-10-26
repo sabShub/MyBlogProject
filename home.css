@@ -22,7 +22,7 @@ body {
 }
 
 /*header style*/
-.header {
+header {
     grid-area: hd;
     background-color:rgb(225, 234, 232);
 }
@@ -64,7 +64,7 @@ nav li {
     padding-right: 30px;
 }
 /*sidebar style*/
-.sidebar {
+section {
     grid-area: sd;
     margin:15px 0 0 10px;
     padding: 0;  
@@ -254,7 +254,7 @@ nav li {
 }
 
 /*footer*/
-.footer {
+footer {
     grid-area: ft;
     background-color: rgb(210,224,221);
     display:flex;
@@ -339,7 +339,7 @@ nav li {
         display: none;
     }
 
-    .sidebar {
+    section {
         display:flex;
         justify-content: space-around;
         margin: 10px 0;
@@ -434,7 +434,7 @@ nav li {
         display: none;
     }
 
-    .sidebar {
+    section {
         display:flex;
         justify-content: space-around;
         margin: 10px 0;
@@ -490,7 +490,7 @@ nav li {
         text-align: left;
     }
 
-    .footer {
+    footer {
         max-width:860px;
         display: block; 
     }
